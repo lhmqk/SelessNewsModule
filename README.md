@@ -1,2 +1,2 @@
-# XelexsNewsModule
-Implementation of Xelex's News module using ASP.NET Core, Angular, TailwindCSS, SwiperJS and AOS
+# SelessNewsModule
+Implementation of Seles's News module using ASP.NET Core, Angular, TailwindCSS, SwiperJS and AOS
