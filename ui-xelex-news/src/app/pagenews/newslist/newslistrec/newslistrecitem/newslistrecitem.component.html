@@ -1,0 +1,13 @@
+<section class="flex">
+  <img
+    [src]="newsListRecItem.img"
+    alt=""
+    class="basis-1/2 w-2/4 h-32 object-cover p-2 pl-4"
+  />
+  <div class="flex flex-col basis-1/2 p-2">
+    <p class="text-blue-900 font-bold line-clamp-3 max-h-24">
+      {{ newsListRecItem.title }}
+    </p>
+    <i class="text-zinc-500">{{ newsListRecItem.date }}</i>
+  </div>
+</section>

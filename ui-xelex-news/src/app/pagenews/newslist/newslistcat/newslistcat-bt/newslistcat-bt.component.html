@@ -1,0 +1,37 @@
+<div class="py-4">
+  <div class="bg-blue-900 flex text-zinc-100 justify-between px-4 py-2 rounded">
+    <p class="text-xl font-bold">Bản tin</p>
+    <a href="" class="flex">
+      <p class="font-bold mr-2">Xem</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        preserveAspectRatio="xMidYMid meet"
+        focusable="false"
+        class="h-6"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </a>
+  </div>
+  <div class="flex mt-4">
+    <div class="basis-2/4 mr-4 border-2 rounded p-4">
+      <app-newslistcat-item
+        *ngIf="newsListCatItemList.length > 0"
+        [newsListCatItem]="newsListCatItemList[0]"
+        class=""
+      ></app-newslistcat-item>
+    </div>
+    <div class="basis-2/4 ml-4">
+      <app-newslistcat-item
+        *ngFor="let newsListCatItem of findBt(newsListCatItemList.slice(1, 4))"
+        [newsListCatItem]="newsListCatItem"
+      ></app-newslistcat-item>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<swiper
+  [slidesPerView]="2.75"
+  [spaceBetween]="10"
+  [navigation]="false"
+  [pagination]="false"
+  [scrollbar]="{ draggable: true }"
+  class="px-8"
+  data-aos="fade-right"
+  data-aos-duration="2000"
+>
+  <ng-template swiperSlide class="">
+    <div data-swiper-slide-index="1" class="mr-2">
+      <div
+        class="h-16 grid place-items-center text-center rounded-lg bg-blue-900 shadow-lg"
+      >
+        <a class="text-xl uppercase font-semibold tracking-tight text-white">
+          Bản tin</a
+        >
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="pb-4">
+    <div data-swiper-slide-index="1" style="margin-right: 16px">
+      <div
+        class="h-16 grid place-items-center text-center rounded-lg bg-blue-900 shadow-lg"
+      >
+        <a class="text-xl uppercase font-semibold tracking-tight text-white">
+          Hợp tác</a
+        >
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="pb-4">
+    <div data-swiper-slide-index="1" style="margin-right: 16px">
+      <div
+        class="h-16 grid place-items-center text-center rounded-lg bg-blue-900 shadow-lg"
+      >
+        <a class="text-xl uppercase font-semibold tracking-tight text-white">
+          Hoạt động nội bộ</a
+        >
+      </div>
+    </div>
+  </ng-template>
+</swiper>

@@ -1,0 +1,15 @@
+<div
+  class="border-2 rounded border-blue-900 flex flex-col mt-4 sticky top-32 z-10"
+>
+  <p
+    class="uppercase text-lg font-bold text-blue-900 bg-blue-900 text-zinc-100 w-full text-center p-2"
+  >
+    Có thể bạn quan tâm
+  </p>
+  <section>
+    <app-newslistrecitem
+      *ngFor="let newsListRecItem of newsListRecItemList | slice : 0 : 4"
+      [newsListRecItem]="newsListRecItem"
+    ></app-newslistrecitem>
+  </section>
+</div>

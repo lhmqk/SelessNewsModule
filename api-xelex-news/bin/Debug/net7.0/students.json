@@ -1,0 +1,27 @@
+[
+  {
+    "name": "John Doe",
+    "age": 18,
+    "grade": "A"
+  },
+  {
+    "name": "Jane Smith",
+    "age": 17,
+    "grade": "B"
+  },
+  {
+    "name": "Bob Johnson",
+    "age": 16,
+    "grade": "C"
+  },
+  {
+    "name": "Sara Lee",
+    "age": 18,
+    "grade": "A"
+  },
+  {
+    "name": "Tom Brown",
+    "age": 17,
+    "grade": "B"
+  }
+]

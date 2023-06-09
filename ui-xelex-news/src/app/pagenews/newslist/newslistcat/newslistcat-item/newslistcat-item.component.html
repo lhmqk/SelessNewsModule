@@ -1,0 +1,48 @@
+<div class="flex flex-col">
+  <img
+    *ngIf="newsListCatItem.img == '../assets/1.jpg'"
+    [src]="newsListCatItem.img"
+    alt=""
+    class="rounded"
+  />
+  <p
+    *ngIf="newsListCatItem.img == '../assets/1.jpg'"
+    class="text-lg font-bold text-blue-900 line-clamp-2"
+  >
+    {{ newsListCatItem.title }}
+  </p>
+  <p
+    *ngIf="newsListCatItem.img != '../assets/1.jpg'"
+    class="font-bold text-blue-900 line-clamp-2"
+  >
+    {{ newsListCatItem.title }}
+  </p>
+  <p class="line-clamp-2">{{ newsListCatItem.desc }}</p>
+  <i class="text-sm my-2">{{ newsListCatItem.date }}</i>
+  <div class="flex justify-between opacity-75">
+    <div class="flex items-center">
+      <img
+        src="https://www.freeiconspng.com/thumbs/www-icon/vector-illustration-of-simple-share-icon--public-domain-vectors-23.png"
+        alt=""
+        class="h-4 mr-2"
+      />
+      <p>{{ newsListCatItem.share }} Chia sẻ</p>
+    </div>
+    <div class="flex items-center">
+      <img
+        src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/view-512.png"
+        alt=""
+        class="h-4 mr-2"
+      />
+      <p>{{ newsListCatItem.view }} Xem</p>
+    </div>
+    <div class="flex items-center">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png"
+        alt=""
+        class="h-4 mr-2"
+      />
+      <p>{{ newsListCatItem.view }} Bình luận</p>
+    </div>
+  </div>
+</div>

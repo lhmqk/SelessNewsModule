@@ -1,0 +1,40 @@
+<div
+  class="px-8 rounded-lg py-4"
+  style="height: 600px"
+  data-aos="fade-right"
+  data-aos-duration="1500"
+>
+  <swiper
+    class="w-full h-full rounded-lg"
+    [slidesPerView]="1"
+    [spaceBetween]="10"
+    [navigation]="true"
+    [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }"
+  >
+    <ng-container
+      *ngFor="let swipernewsItem of swipernewsItemList | slice : 0 : 4"
+    >
+      <ng-template swiperSlide>
+        <img
+          [src]="swipernewsItem.img"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="bg-blue-800/75 text-white w-1/2 p-4 m-8"
+          style="position: absolute; bottom: 0; right: 0"
+          data-aos="fade-down-right"
+          data-aos-duration="1500"
+        >
+          <p class="font-bold text-lg">{{ swipernewsItem.title }}</p>
+
+          <i>{{ swipernewsItem.date }}</i>
+          <p>
+            {{ swipernewsItem.desc }}
+          </p>
+        </div>
+      </ng-template>
+    </ng-container>
+  </swiper>
+</div>
